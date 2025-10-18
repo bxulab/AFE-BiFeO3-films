@@ -1,38 +1,34 @@
 # AFE-BiFeO3-films   
-This repository provides the dataset supporting the figures presented in the paper *“Antiferroelectricity in BiFeO₃ Thin Films”*. The data include calculated energies, polarizations, and order parameters associated with the structures discussed in the manuscript and supplementary material.
+This repository contains the data supporting our paper *“Antiferroelectricity in BiFeO₃ Thin Films”* (DOI: https://doi.org/10.1103/fqpx-dpbn). The dataset includes calculated order parameters and energies obtained under various conditions using the effective Hamiltonian method. These data were used to generate the figures presented in the main manuscript and the supplemental material.
 
-## Dataset for the paper *“Antiferroelectricity in BiFeO₃ Thin Films”*
+### Energy [Fig. 1(c)]
+The *R3c* and *Pnma* phases correspond to the *R*-like and *O*-like structures in BiFeO3 film, respectively, as described in the paper. 
+- first column -- film thickness (number of unit cells)
+- second column -- energy (Hartree)
 
-DOI: https://doi.org/10.1103/fqpx-dpbn
-
-### Energy
-The *R3c* and *Pnma* phases correspond to the *R*-like and *O*-like structures, respectively, as defined in the paper. 
-- first column -- the number of film layers (equivalently representing the film thickness)
-- second column -- the energy values (Hartree)
-
-### P-E_loop-data
+### P-E_loop-data (Fig. 3 & Fig. S10)
 filename: a_b_c_pz.dat  
 - a -- temperature (K) 
-- b -- beta  
-- c -- the number of film layers
+- b -- beta (screening factor)
+- c -- film thickness (number of unit cells)
   
-### Pnma_Edown
+### Pnma_Edown (Fig. S9)
 filename: a_b_c_pz.dat
-- a -- beta
+- a -- beta (screening factor)
 - b -- temperature (K)
-- c -- number of film layers
+- c -- film thickness (number of unit cells)
 
-### heating
+### heating (Fig. 4 & Fig. S11-13)
 filename: Pnma_heating_x_y.dat 
 - x -- biaxial strain
 - y -- order parameters (polarizations & octahedral rotation angles)
   
-### layer_by_layer
+### layer_by_layer (Fig. S2)
 - uxyz.dat -- components of local modes
 - wxyz.dat -- components of octahedral rotation angles
 
-### order_parameters_vs_thickness
-The *R3c*, *Pnma*, and *P4mm* phases correspond to the *R*-like, *O*-like, and *T*-like structures, respectively.  
+### order_parameters_vs_thickness (Fig. S4)
+The *R3c*, *Pnma*, and *P4mm* phases correspond to the *R*-like, *O*-like, and *T*-like structures in BiFeO3 film, respectively.  
 - p -- polarization (μC/cm²)  
 - u -- local mode amplitude  
 - w -- octahedral rotation angles (rads)
